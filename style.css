@@ -307,6 +307,63 @@ nav a.resume-btn:focus-visible {
     box-shadow: 0 15px 40px rgba(139, 92, 246, .35);
 }
 
+.hero-social-links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.hero-social-links a {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .05);
+    color: #d7c8ff;
+    font-size: 19px;
+    text-decoration: none;
+    animation: socialFloat 3.2s ease-in-out infinite;
+    transition: color .25s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+
+.hero-social-links a:nth-child(2) {
+    animation-delay: .25s;
+}
+
+.hero-social-links a:nth-child(3) {
+    animation-delay: .5s;
+}
+
+.hero-social-links a:nth-child(4) {
+    animation-delay: .75s;
+}
+
+.hero-social-links a:hover,
+.hero-social-links a:focus-visible {
+    transform: translateY(-5px) scale(1.08);
+    border-color: rgba(190, 37, 229, .75);
+    background: linear-gradient(135deg, rgba(190, 37, 229, .28), rgba(79, 70, 229, .28));
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(139, 92, 246, .3);
+}
+
+.hero-social-links a:focus-visible {
+    outline: 2px solid #d7c8ff;
+    outline-offset: 4px;
+}
+
+@keyframes socialFloat {
+    0%, 100% {
+        translate: 0 0;
+    }
+    50% {
+        translate: 0 -5px;
+    }
+}
+
 .hero-portrait {
     position: relative;
     display: grid;

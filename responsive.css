@@ -120,9 +120,10 @@ main {
     position: absolute;
     z-index: 2;
     inset: 0;
-    border: 1px solid rgba(190, 151, 244, .4);
+    border: 2px solid rgba(203, 145, 255, .9);
     border-radius: 50%;
-    box-shadow: 0 0 32px rgba(139, 92, 246, .16), inset 0 0 24px rgba(139, 92, 246, .08);
+    box-shadow: 0 0 8px rgba(190, 37, 229, .75), 0 0 22px rgba(139, 92, 246, .58),
+        0 0 42px rgba(79, 70, 229, .28), inset 0 0 16px rgba(190, 37, 229, .14);
     content: "";
     pointer-events: none;
 }
@@ -655,6 +656,10 @@ main {
 
     .buttons {
         gap: 11px;
+        justify-content: center;
+    }
+
+    .hero-social-links {
         justify-content: center;
     }
 
